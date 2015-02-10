@@ -1,0 +1,20 @@
+"crossbowgame"
+{
+	"base"		"base"
+	"title"		"Crossbow Game"
+	"maps"		"^cbg_"
+	"menusystem"	"1"
+	"workshopid"	""
+
+	"settings"
+	{
+		1
+		{
+			"name"		"mlg_sounds"
+			"text"		"MLG Sounds"
+			"help"		"Enables MLG sounds"
+			"type"		"CheckBox"
+			"default"	"1"
+		}
+	}
+}
