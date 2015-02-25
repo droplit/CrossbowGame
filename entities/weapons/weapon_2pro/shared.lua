@@ -1,12 +1,12 @@
 AddCSLuaFile( "shared.lua" )
 
-print("Noise Maker SWEP loaded!")
+print("2 PRO SWEP loaded!")
 
 SWEP.Author			= "Terry Hearst"
 SWEP.Contact		= "thearst3rd@gmail.com"
-SWEP.Purpose		= "Make MLG Sounds"
+SWEP.Purpose		= "2 PRO 4 U"
 SWEP.Instructions	= "Click for hitmark, right click for airhorn"
-SWEP.PrintName		= "MLG Noise Maker"
+SWEP.PrintName		= "2 PRO WEPON"
 
 SWEP.ViewModelFOV	= 69
 SWEP.ViewModelFlip	= false
@@ -69,14 +69,14 @@ function SWEP:PrimaryAttack()
 		self:EmitSound( "hitmark.wav" )
 	
 	// Shoot 9 bullets, 150 damage, 0.01 aimcone
-	//self:ShootBullet( 10000, 1000, .5 )
+	self:ShootBullet( 10000, 1000, .5 )
 	self:ShootEffects()
 	
 	// Remove 1 bullet from our clip
 	//self:TakePrimaryAmmo( 1 )
 	
 	// Punch the players view
-	//self.Owner:ViewPunch( Angle( -1, 0, 0 ) )
+	self.Owner:ViewPunch( Angle( -1, 0, 0 ) )
 	
 end
 

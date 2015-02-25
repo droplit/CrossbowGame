@@ -1,0 +1,16 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="8">
+            <File firstVisibleLine="260" xOffset="0" scrollWidth="2000" startPos="7624" endPos="7624" selMode="0" lang="Gmod Lua" encoding="-1" filename="C:\gmod\garrysmod\gamemodes\crossbowgame\gamemode\init.lua" backupFilePath="" originalFileLastModifTimestamp="1424415335" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="768" startPos="18" endPos="18" selMode="0" lang="Gmod Lua" encoding="-1" filename="C:\gmod\garrysmod\gamemodes\crossbowgame\gamemode\shared.lua" backupFilePath="" originalFileLastModifTimestamp="1423439645" />
+            <File firstVisibleLine="18" xOffset="0" scrollWidth="1712" startPos="721" endPos="721" selMode="0" lang="Gmod Lua" encoding="-1" filename="C:\gmod\garrysmod\gamemodes\crossbowgame\gamemode\cl_init.lua" backupFilePath="" originalFileLastModifTimestamp="1424124178" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="664" startPos="393" endPos="393" selMode="0" lang="Gmod Lua" encoding="-1" filename="C:\gmod\garrysmod\gamemodes\crossbowgame\gamemode\player.lua" backupFilePath="" originalFileLastModifTimestamp="1423439639" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1680" startPos="3333" endPos="3333" selMode="0" lang="Gmod Lua" encoding="-1" filename="C:\gmod\garrysmod\gamemodes\crossbowgame\gamemode\cl_hud.lua" backupFilePath="" originalFileLastModifTimestamp="1424067046" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1216" startPos="1085" endPos="1085" selMode="0" lang="Gmod Lua" encoding="-1" filename="C:\gmod\garrysmod\gamemodes\crossbowgame\gamemode\cl_scoreboard.lua" backupFilePath="" originalFileLastModifTimestamp="1424124292" />
+            <File firstVisibleLine="13" xOffset="0" scrollWidth="952" startPos="443" endPos="443" selMode="0" lang="Normal Text" encoding="-1" filename="C:\gmod\unused code.txt" backupFilePath="" originalFileLastModifTimestamp="1423440076" />
+            <File firstVisibleLine="66" xOffset="0" scrollWidth="712" startPos="555" endPos="555" selMode="0" lang="Gmod Lua" encoding="-1" filename="C:\gmod\garrysmod\gamemodes\crossbowgame\entities\weapons\noise_maker\shared.lua" backupFilePath="" originalFileLastModifTimestamp="1424211213" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1624" startPos="1085" endPos="1085" selMode="0" lang="HTML" encoding="-1" filename="C:\gmod\garrysmod\addons\ulx\ulx_motd.txt" backupFilePath="" originalFileLastModifTimestamp="1424062989" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
