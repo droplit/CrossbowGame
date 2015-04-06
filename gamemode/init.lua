@@ -11,7 +11,7 @@ include( 'player.lua' )
 
 // Serverside only stuff goes here
 
-CreateConVar( "mlg_sounds", "1", 1, "If the crossbow game has mlg sounds" )
+CreateConVar( "mlg_sounds", "1", FCVAR_NONE, "If the crossbow game has mlg sounds" )
 //CreateConVar( "set_killstreaks", "0", FCVAR_CHEAT, "Set the Players killstreak" )
 
 // Forces players to download models / workshop con
@@ -20,6 +20,8 @@ resource.AddWorkshop( "325884882" )		// sanic
 resource.AddWorkshop( "351508041" )		// snipars
 resource.AddWorkshop( "344162661" )		// dank mlg
 resource.AddWorkshop( "391383735" ) 	// left shark
+resource.AddWorkshop( "314261589" )		// shrek 	
+
 resource.AddWorkshop( "381636466" )		// text to speech
 //resource.AddFile( "materials/gui/hitmark.vmt" )	// hitmarker image
 resource.AddFile( "materials/gui/hitmarker_crop.png" )
@@ -32,7 +34,8 @@ spawnModels =
 	"models/player/dank.mdl",
 	"models/player/sanic.mdl",
 	"models/player/snipars.mdl",
-	"models/freeman/player/left_shark.mdl"
+	"models/freeman/player/left_shark.mdl",
+	"models/player/pyroteknik/shrek.mdl"
 }
 
 /*---------------------------------------------------------
@@ -110,7 +113,7 @@ function GM:PlayerSpawn( ply )
 		ply:SetEyeAngles( ply:GetNWAngle( "spawnangle" ) )
 	end
 	
-	ply:Give( "mlg_crossbow" )
+	ply:Give( "weapon_crossbow" )
 	ply:GiveAmmo( 256, "XBowBolt", true )
 	ply:SetupHands()
 	
@@ -334,13 +337,13 @@ end
 
 function SendAttacker( ply, attacker )
 	
-	if(ply == attacker) then 
+	if ( ply == attacker ) then 
 		print( "GG" )
-	else
-		net.Start( "attacker" )
-		net.WriteEntity( attacker )
-		net.WriteBool( attacker:Alive() )
-		net.Send( ply )
 	end
+	net.Start( "attacker" )
+	net.WriteEntity( attacker )
+	net.WriteBool( attacker:Alive() )
+	net.Send( ply )
+	
 end
 util.AddNetworkString( "attacker" )

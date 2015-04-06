@@ -238,7 +238,7 @@ if SERVER then
 		self.Hit = false
 		self.LastSound = CurTime()
 
-		self:SetModel("models/arrows/other/arrow.mdl")
+		self:SetModel("models/mixerman3d/other/arrow.mdl")
 		self:PhysicsInit(SOLID_VPHYSICS)
 		self:SetMoveType(MOVETYPE_VPHYSICS)
 		self:SetSolid(SOLID_VPHYSICS)

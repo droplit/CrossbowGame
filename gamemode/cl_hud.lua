@@ -18,6 +18,7 @@ surface.CreateFont( "PlayerNames",
 
 attacker = LocalPlayer()
 bylate = false
+suicide = false
 ShowKilledBy = false
 
 function HUDHide( hud )						// Hides the HUDs Health, Suit, and Ammo displays
@@ -117,9 +118,13 @@ function OurHUD()			// Actually paints the HUD
 				
 				surface.SetTextColor( 50 + ( v:GetNWInt( "killstreak" )*2 ), 50, 50, a )
 				surface.SetTextPos( x, y )
-				surface.DrawText( text )
+				if(v:IsTyping()) then
+					surface.DrawText( text .. "... is Typing" )
+				else
+					surface.DrawText( text )
+				end
 				ShadowText( x, y, text, Color( math.Clamp( v:GetNWInt( "killstreak" )*25, 0, 255 ), math.Clamp( 255 - v:GetNWInt( "killstreak" )*25, 0, 255 ), 0, a ), 1 )
-
+				
 			end
 			
 		end
@@ -140,6 +145,7 @@ function OurHUD()			// Actually paints the HUD
 	end
 	
 	if GetConVar( "mlg_hud_crosshair" ):GetBool() then
+		surface.SetDrawColor( 255, 255, 255, 255 )
 		surface.SetMaterial( hitmarker )
 		surface.DrawTexturedRect( ScrW()/2 - 16, ScrH()/2 - 16, 32, 32 )
 	else
@@ -170,6 +176,8 @@ function KilledBy( attacker )
 
 	if bylate then
 		text = "You were killed by the late: " .. attacker:Nick()
+	elseif suicide then
+		text = "You killed yourself."
 	end
 	
 	surface.SetFont( "HUDFont" )

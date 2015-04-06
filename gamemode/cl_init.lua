@@ -9,7 +9,7 @@ include( "cl_scoreboard.lua" )
 CreateConVar( "mlg_hud_kills", "1", FCVAR_NONE, "If the killstreak is rendered")
 CreateConVar( "mlg_hud_players", "1", FCVAR_NONE, "If the player names are rendered")
 CreateConVar( "mlg_hud_timer", "1", FCVAR_NONE, "If the 4:20 timer is rendered" )
-CreateConVar( "mlg_hud_crosshair", "0", FCVAR_NONE, "If the hitmarker crosshair is rendered" )
+CreateConVar( "mlg_hud_crosshair", "1", FCVAR_NONE, "If the hitmarker crosshair is rendered" )
 CreateConVar( "hax_mlgplayers", "0", FCVAR_CHEAT, "420 wallhack m8" )
 
 HudTime = CurTime()
@@ -75,7 +75,8 @@ end
 function ReceiveAttacker( len, ply )
 
 	attacker = net.ReadEntity()
-	bylate = net.ReadBool()
+	bylate = not net.ReadBool()
+	suicide = LocalPlayer() == attacker
 	ShowKilledBy = true
 
 	//local frame = vgui.Create("DFrame")
