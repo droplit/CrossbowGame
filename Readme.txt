@@ -7,17 +7,21 @@
 /_/  /_/_____/\____/     \____/_/   \____/____/____/_.___/\____/|__/|__/   \____/\__,_/_/ /_/ /_/\___/ 
                                                                                                        
 
+Created by:
+Droplit - Steam & Twitter - Programmer
+GuitarFreak9700 - Steam & @thearst3rd - Twitter - Programmer
+FleshVinyl - Steam - Ideas Person & MLG Specialist
+FriarFin - Ideas Person & In-Flight Entertainment
+Biolaser - Legal Council
 
 ---------------
 How To Install:
 ---------------
-
 Drag crossbowgame into your gamemodes folder
 ex: \garrysmod\gamemode\*HERE*
 
 Remove any previous installations of crossbowgame before moving this one in
 If you put crossbowgame in addons, it will NOT work!
-
 
 ---------
 Commands:
@@ -32,14 +36,12 @@ Layout: cmd - default value - description
 	Serverside:
 - mlg_sound - 1 - If the MLG sound effects should play.
 
-
 --------------------------------
 What to do, if a problem occurs:
 --------------------------------
-
 There are three kinds of problems that can happen in CrossbowGame:
-- The problem caused by the end user (think of a bad modification or a bad setting)
-- The problem caused by us, the developers/
+- The problem caused by the client(think of a bad modification or a bad setting)
+- The problem caused by us
 
 The very first step of solving your problem is figuring out who caused it. Often this is easy to figure out. If errors started to occur
 when you edited your HUD, it's probably your fault (or the server host's). If the server starts in sandbox, or if you get the error
@@ -70,14 +72,13 @@ The most important rules are:
 6. Never just post that "It doesn't work" that's no information to work on.
 
 How to report a bug:
-1. Enter lua_log_sv 1 in RCon or the server console
-2. Make the problem happen
+1. Make the problem happen
 	if a weapon messes up when you shoot, shoot the weapon.
 	if it happens on server start, change level or restart the server
 	if it happens when the mayor tries to place a lawboard, make the mayor try to spawn a lawboard
 	etc.
-3. Go to the FTP of your server.
-4. In the garrysmod/ folder you should see "lua_errors_server.txt" and/or "clientside_errors.txt"
+2. Go to the FTP of your server.
+3. In the garrysmod/ folder you should see "lua_errors_server.txt" and/or "clientside_errors.txt"
  	upload the contents of BOTH these files to www.pastebin.com
  	if you don't see those files, make sure you did everything right (lua_log_sv must be 1).
  	if you don't see the files and you're sure that you did the logging right, mention this in the bug report:
@@ -86,9 +87,10 @@ How to report a bug:
  	"The other error log file was not generated."
 
  	Thanks. Errors help A LOT.
-5. Go to https://github.com/jpinz/CrossbowGame/issues/new (DON'T SKIP THE PREVIOUS STEPS)
-6. Think of an appropriate title. Try to be specific here
-7. Take the issue template from "github issue template.txt" and copy paste it into the "Write" field.
-8. Fill it in, try not to leave anything empty!
+4. Go to https://github.com/droplit/CrossbowGame/issues/new (DON'T SKIP THE PREVIOUS STEPS)
+5. Think of an appropriate title. Try to be specific here
+6. Take the issue template from "github issue template.txt" and copy paste it into the "Write" field.
+7. Fill it in, try not to leave anything empty!
 	MORE information = MUCH HIGHER chance that the problem will be solved
-9. Click "Submit new issue"
+8. Click "Submit new issue"
+Thanks!

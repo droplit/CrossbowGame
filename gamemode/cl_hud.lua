@@ -172,7 +172,12 @@ function KilledBy( attacker )
 
 	local x, y = ScrW()/2, ScrH()/4
 	
-	local text = "You were killed by: " .. attacker:Nick()
+	local text = ""
+	if attacker == nil then
+		text = "You killed yourself"
+	else
+		text = "You were killed by: " .. attacker:Nick()
+	end
 
 	if bylate then
 		text = "You were killed by the late: " .. attacker:Nick()
@@ -182,7 +187,7 @@ function KilledBy( attacker )
 	
 	surface.SetFont( "HUDFont" )
 	x = x - surface.GetTextSize( text )/2
-	local width, height = surface.GetTextSize(text)
+	local width, height = surface.GetTextSize( text )
 	draw.RoundedBox( 8, x-4, y, width+8, height, Color( 84, 84, 84, 175 ) )
 	
 	ShadowText( x, y, text, Color( 255, 255, 255 ), 2 )
