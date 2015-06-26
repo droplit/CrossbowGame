@@ -1,0 +1,11 @@
+{
+	"title"		:	"MLG Crossbow Game",
+	"type"		:	"gamemode",
+	"tags"		:	[ "mlg", "deathmatch", "crossbow", "freeforall", "funny", "shrek", "1337", "leet", "h4x0r", "leftshark", "snipars", "airhorn" ],
+	"ignore"	:
+	[
+		"*.psd",
+		"*.vcproj",
+		"*.svn*"
+	]
+}
